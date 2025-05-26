@@ -1,3 +1,9 @@
+include:
+  - component: "gitlab.gnome.org/GNOME/citemplates/release-service@master"
+    inputs:
+      dist-job-name: "dist-job"
+      tarball-artifact-path: "${TARBALL_ARTIFACT_PATH}"
+
 default:
   image: debian:unstable
 
@@ -14,6 +20,7 @@ default:
 
 variables:
   MESON_TEST_TIMEOUT_MULTIPLIER: 2
+  TARBALL_ARTIFACT_PATH: "_build/meson-dist/${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.tar.xz"
 
 stages:
   - build
