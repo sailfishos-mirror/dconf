@@ -1,3 +1,38 @@
+Changes in dconf 0.49.0
+=======================
+
+ - ci: Add release-service component to automate releases (Jordan Petridis, !90)
+ - ci: Remove lcov workaround (Diego Escalante Urrelo, !84)
+ - ci: Add lcov package missing dependencies (Diego Escalante Urrelo, !76)
+ - ci: Tell debconf to be noninteractive (Diego Escalante Urrelo, !76)
+ - ci: Tidy up common setup config (Diego Escalante Urrelo, !76)
+ - ci: Fix dist job (Diego Escalante Urrelo, !76)
+ - ci: Tidy up meson calls (Diego Escalante Urrelo, !76)
+ - ci: Keep all the apt calls together (Diego Escalante Urrelo, !76)
+ - ci: Add explanation for missing `lcov_2.0-3` deps (Diego Escalante Urrelo, !76)
+ - ci: Rename master branch to main (Philip Withnall, !80)
+ - ci: Combine build and test CI jobs (Philip Withnall, !81)
+ - tests: Use g_memdup2 (Matt Turner, !73)
+ - tests: Do not link libdconf_engine_test with libdconf (Xavier Claessens, !75)
+ - tests: Do not use system profile (Marek Kasik, !87)
+ - tests: Use specific g_assert_ functions (Diego Escalante Urrelo, !77)
+ - tests: Add a shellcheck test to validate SH files (Philip Withnall, !81)
+ - docs: Enable gtk-doc check (Diego Escalante Urrelo, !76)
+ - docs: Document dconf read -d option in dconf-tool.xml (bugith, !74)
+ - Spelling fixes (Ville Skyttä, !79)
+ - completion: Fix error on unknown command in nounset mode (Ville Skyttä, !78)
+ - completion: Remove redundant case match (Philip Withnall, !81)
+ - completion: Annotate file with shell for shellcheck to use (Philip Withnall, !81)
+ - completion: Ignore shellcheck error about COMPREPLY (Philip Withnall, !81)
+ - completion: invoke the dconf command being completed (Ville Skyttä, !82)
+ - completion: avoid errors from words starting with a dash (Ville Skyttä, !83)
+ - build: Use GNOME module post_install() (Matt Turner, !72)
+ - build: Use install prefix in systemd files paths (Diego Escalante Urrelo, !71)
+ - build: Fix use of deprecated dependency.get_pkgconfig_variable() (Philip Withnall, !81)
+ - build: Move gvdb to a subproject and update (Wesley Hershberger, !89)
+ - Remove invalid maintainer entry from doap file (Sophie Herold, !85)
+
+
 Changes in dconf 0.40.0
 =======================
 
