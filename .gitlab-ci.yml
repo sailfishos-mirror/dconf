@@ -1,3 +1,8 @@
+include:
+  - component: "gitlab.gnome.org/GNOME/citemplates/release-service@master"
+    inputs:
+      dist-job-name: "dist-job"
+
 default:
   image: debian:unstable
 
@@ -47,9 +52,10 @@ dist-job:
   script:
     - meson setup --buildtype release _build
     - ninja -C _build dist
+    - cp -r _build/meson-dist/ public-dist/
   artifacts:
     paths:
-      - "_build/meson-dist/dconf-*.tar.xz"
+      - "public-dist/"
 
 pages:
   stage: deploy
