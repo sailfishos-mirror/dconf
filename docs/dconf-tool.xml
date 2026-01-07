@@ -105,7 +105,7 @@
     </para>
 
     <para>
-      The <replaceable>OUTPUT</replaceable> argument must the location to write a (binary) dconf database to and the
+      The <replaceable>OUTPUT</replaceable> argument must be the location to write a (binary) dconf database to and the
       <replaceable>KEYFILEDIR</replaceable> argument must be a .d directory containing keyfiles.
     </para>
 
