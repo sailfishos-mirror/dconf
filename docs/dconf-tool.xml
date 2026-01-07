@@ -115,6 +115,11 @@
     </para>
 
     <para>
+      The optional <replaceable>DBDIR</replaceable> argument is a directory containing the system dconf databases to be updated.
+      The default directory is typically <filename>/etc/dconf/db/</filename> and users need sufficient privileges to update it.
+    </para>
+
+    <para>
       Note that dconf needs a D-Bus session bus connection to write changes to the dconf database.
     </para>
   </refsect1>
