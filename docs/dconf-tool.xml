@@ -105,13 +105,18 @@
     </para>
 
     <para>
-      The <replaceable>OUTPUT</replaceable> argument must the location to write a (binary) dconf database to and the
+      The <replaceable>OUTPUT</replaceable> argument must be the location to write a (binary) dconf database to and the
       <replaceable>KEYFILEDIR</replaceable> argument must be a .d directory containing keyfiles.
     </para>
 
     <para>
       <replaceable>VALUE</replaceable> arguments must be in GVariant format, so e.g. a string must include
       explicit quotes: "'foo'". This format is also used when printing out values.
+    </para>
+
+    <para>
+      The optional <replaceable>DBDIR</replaceable> argument is a directory containing the system dconf databases to be updated.
+      The default directory is typically <filename>/etc/dconf/db/</filename> and users need sufficient privileges to update it.
     </para>
 
     <para>
